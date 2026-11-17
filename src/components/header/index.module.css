@@ -1,0 +1,127 @@
+.header {
+    background-color: #00071d;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 1em 0;
+}
+
+@media (max-width: 800px) {
+    .header .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.logo {
+    display: flex;
+}
+
+.titulos {
+    margin: 1em;
+    font-family: "Roboto", sans-serif;
+    min-width: 280px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.titulos .nome {
+    font-size: 2.5em;
+}
+
+.titulos .slogan {
+    font-size: 1.17em;
+    text-transform: uppercase;
+    margin: 0.2em 0;
+}
+
+.header nav {
+    display: flex;
+    width: 100%;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header ul li a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 3em 1em;
+    transition: 0.3s;
+
+}
+
+.header ul li a:hover,
+.header ul li a.ativo
+{
+    background-color: #010411;
+    border-bottom: 3px solid #16a085;
+}
+
+@media (max-width: 800px) {
+    .header nav {
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    .header ul li a {
+        padding: 0.5em 5em;
+    }
+
+    .header ul li a:hover,
+    .header ul li a.ativo {
+        border: 3px solid #16a085;
+    }
+}
+
+.destaque {
+    color: #16a085;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.botaoContato {
+    background-color: #0b7562;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.8em 1.4em;
+    border-radius: .2em;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.botaoContato:hover {
+    background-color: #0d5d4d;
+}
+
+.botaoContato img {
+    width: 20px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+@media (max-width: 800px) {
+    .botaoContato {
+        margin-top: 2em;
+    }
+}
+
+

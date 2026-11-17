@@ -1,0 +1,212 @@
+.container {
+    max-width: 1200px;
+    padding: 0 2em;
+    margin: 0 auto 5em;
+    min-height: 80vh;
+}
+
+.container h1 {
+    font-size: 2.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 1.5em;
+}
+
+.divisoria {
+    width: 70px;
+    height: 6px;
+    background: #000;
+    margin-bottom: 3em;
+}
+
+.destaque {
+    color: #0b7562;
+    font-weight: bold;
+}
+
+
+.conteudo {
+    display: flex;
+    gap: 3em;
+    align-items: flex-start;
+}
+
+.info {
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+    color: #191f63;
+}
+
+.info p {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.info strong {
+    font-weight: 700;
+}
+
+.form,
+.sucesso {
+    flex: 2;
+    background-color: #fff;
+    padding: 2em;
+}
+
+
+.linha {
+    display: flex;
+    gap: 1.5em;
+}
+
+.linha .campo {
+    flex: 1;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.campo label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #191f63;
+    margin-bottom: 0.5em;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: #00071d;
+    background-color: #ecf0f1;
+    border: 2px solid transparent;
+    border-radius: 0.2em;
+    padding: 0.8em 1em;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.campo textarea {
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    background-color: #fff;
+    border-color: #16a085;
+}
+
+.campo .campoInvalido {
+    border-color: #c0392b;
+}
+
+.erro {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    color: #c0392b;
+    margin-top: 0.4em;
+}
+
+.isca {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.falha {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.95em;
+    color: #c0392b;
+    background-color: #fdecea;
+    border-left: 4px solid #c0392b;
+    padding: 0.8em 1em;
+    margin-bottom: 1.5em;
+}
+
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0b7562;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.8em 1.6em;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #0d5d4d;
+}
+
+.botao:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.botao img {
+    width: 20px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.sucesso {
+    border-left: 6px solid #0b7562;
+    font-family: "Roboto", sans-serif;
+    color: #191f63;
+}
+
+.sucesso h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #0b7562;
+    margin-bottom: 0.5em;
+}
+
+.sucesso p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+
+@media (max-width: 800px) {
+    .conteudo,
+    .linha {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .info {
+        margin-bottom: 1.5em;
+    }
+
+    .form,
+    .sucesso {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5em;
+    }
+
+    .botao {
+        width: 100%;
+        justify-content: center;
+    }
+}

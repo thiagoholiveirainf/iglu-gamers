@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    background: radial-gradient(circle at top, #0a1a3a 0%, #00071d 70%);
+    color: #ffffff;
+    padding: 6em 2em;
+    text-align: center;
+}
+
+.conteudo {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.icone {
+    width: 72px;
+    margin-bottom: 1.5em;
+}
+
+.codigo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 9em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+}
+
+.destaque {
+    color: #16a085;
+}
+
+.conteudo h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 2.2em;
+    margin: 0.6em 0 0.5em;
+}
+
+.texto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #d0d6dc;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2.5em;
+}
+
+.botao,
+.botaoSecundario {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    border-radius: 0.2em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao {
+    background-color: #0b7562;
+    color: #ffffff;
+    border: 2px solid #0b7562;
+}
+
+.botao:hover {
+    background-color: #0d5d4d;
+    border-color: #0d5d4d;
+}
+
+.botaoSecundario {
+    color: #ffffff;
+    border: 2px solid #16a085;
+}
+
+.botaoSecundario:hover {
+    background-color: #0b7562;
+    border-color: #0b7562;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 4em 1.5em;
+    }
+
+    .codigo {
+        font-size: 6em;
+    }
+
+    .conteudo h1 {
+        font-size: 1.7em;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+}

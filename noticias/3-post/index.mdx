@@ -1,0 +1,56 @@
+---
+title: "Guia: como preparar sua distro Linux para jogar"
+date: "2026-10-27"
+time: "10:00"
+slug: "guia-preparar-distro-linux-para-jogar"
+card: "card.webp"
+card_alt: "Setup gamer com monitor, teclado e gabinete com iluminação RGB"
+read_time: "8 min"
+excerpt: "Drivers, lojas e ferramentas: tudo o que você precisa instalar para transformar seu Linux em uma máquina gamer."
+tags: ["linux","guia"]
+---
+
+Começar a jogar no Linux está mais fácil do que nunca, mas alguns ajustes fazem toda a diferença no desempenho e na estabilidade. Neste guia, reunimos o essencial para deixar sua distro pronta para a jogatina.
+
+## 1. Escolha uma distro atualizada
+
+Distribuições com pacotes recentes costumam trazer drivers e kernels mais novos, o que melhora a compatibilidade com hardware e jogos. Algumas opções populares entre gamers:
+
+- **Fedora**: atualizada e estável, com ótimo suporte a hardware recente;
+- **Pop!_OS** e **Linux Mint**: amigáveis para iniciantes;
+- **CachyOS**, **Nobara** e **Bazzite**: já vêm otimizadas para jogos.
+
+## 2. Instale os drivers de vídeo corretos
+
+- **AMD e Intel**: os drivers **Mesa** já vêm com a maioria das distros. Basta manter o sistema atualizado;
+- **NVIDIA**: instale o driver oficial da NVIDIA pelo gerenciador de drivers ou repositório da sua distro.
+
+Drivers desatualizados são a causa mais comum de travamentos e baixo desempenho.
+
+![PC gamer com gabinete de vidro, placa de vídeo e ventoinhas com iluminação laranja ao lado de um monitor e teclado mecânico](./image.webp "Com os drivers certos, a placa de vídeo entrega todo o seu desempenho também no Linux.")
+
+## 3. Instale as lojas e launchers
+
+- **Steam**: com o Proton, roda a maior parte do catálogo para Windows;
+- **Heroic Games Launcher**: acesso aos jogos da Epic Games, GOG e Amazon;
+- **Lutris**: centraliza jogos de várias fontes, inclusive emuladores;
+- **Bottles**: cria ambientes isolados para rodar programas de Windows.
+
+## 4. Ferramentas que melhoram a experiência
+
+- **GameMode**: ajusta o sistema automaticamente para priorizar o jogo em execução;
+- **MangoHud**: exibe FPS, uso de CPU, GPU e temperaturas na tela;
+- **Gamescope**: o mesmo compositor usado no Steam Deck, útil para controlar resolução e limite de FPS;
+- **ProtonUp-Qt**: instala versões alternativas do Proton, como o **Proton-GE**, que às vezes resolvem problemas específicos.
+
+Na Steam, você pode ativar o GameMode e o MangoHud por jogo, nas **opções de inicialização**:
+
+```
+gamemoderun mangohud %command%
+```
+
+## 5. Consulte a comunidade
+
+Antes de quebrar a cabeça com um jogo específico, pesquise no **ProtonDB**. Lá os próprios jogadores compartilham configurações, opções de inicialização e versões do Proton que funcionam melhor para cada título.
+
+Com esses passos, seu Linux estará pronto para encarar desde indies leves até os lançamentos mais pesados. Bom jogo, pinguim!

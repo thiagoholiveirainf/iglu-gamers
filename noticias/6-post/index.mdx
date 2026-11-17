@@ -1,0 +1,47 @@
+---
+title: "Wayland ou X11: qual servidor gráfico é melhor para jogos?"
+date: "2026-10-06"
+time: "08:30"
+slug: "wayland-ou-x11-jogos"
+card: "card.webp"
+card_alt: "Setup gamer com monitor, teclado e gabinete com iluminação RGB"
+read_time: "6 min"
+excerpt: "O Wayland já é padrão nas principais distros, mas muitos jogadores ainda têm dúvidas. Entenda as diferenças e o impacto na sua jogatina."
+tags: ["linux","desempenho"]
+---
+
+Se você usa Linux há algum tempo, provavelmente já se deparou com a escolha entre **Wayland** e **X11** na tela de login. Essa decisão, que parece técnica demais, pode afetar diretamente a sua experiência com jogos.
+
+## O que são, afinal?
+
+Ambos são **protocolos de exibição**, responsáveis por desenhar janelas na tela e receber entradas do teclado e do mouse:
+
+- **X11 (Xorg)**: criado na década de 1980, é extremamente compatível, mas carrega décadas de código legado;
+- **Wayland**: seu sucessor moderno, mais simples, seguro e eficiente.
+
+Distros como **Fedora**, **Ubuntu** e as que usam **KDE Plasma** e **GNOME** já adotam o Wayland como padrão.
+
+## Vantagens do Wayland para jogos
+
+- **Sem screen tearing**: a imagem é sincronizada por padrão, sem aquelas linhas cortando a tela;
+- **Suporte a VRR** (FreeSync e G-Sync) mesmo com vários monitores de taxas diferentes;
+- **HDR**: o suporte a alto alcance dinâmico avançou bastante e já funciona em vários jogos;
+- **Escalonamento fracionado**, ideal para monitores de alta resolução.
+
+## E onde o X11 ainda se sai bem?
+
+O X11 continua sendo uma opção segura em alguns cenários:
+
+1. **Placas NVIDIA antigas**, que não recebem mais drivers com bom suporte ao Wayland;
+2. **Programas antigos** de captura de tela ou automação que ainda não foram adaptados;
+3. **Jogos específicos** que apresentam problemas de entrada ou de janela.
+
+Vale lembrar que a maioria dos jogos roda pelo **XWayland**, uma camada de compatibilidade que permite executar aplicativos X11 dentro de uma sessão Wayland de forma transparente.
+
+## Qual escolher?
+
+Para a maior parte dos jogadores com hardware recente, a recomendação é simples: **use Wayland**. Os drivers da AMD e da Intel têm excelente suporte, e os drivers recentes da NVIDIA também evoluíram muito.
+
+Se algum jogo apresentar problemas, basta sair da sessão e escolher **X11** na tela de login para testar. A troca é rápida e não altera nada no seu sistema.
+
+O futuro do desktop Linux é o Wayland, e para os jogos esse futuro já chegou.

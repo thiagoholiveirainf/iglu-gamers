@@ -1,0 +1,62 @@
+footer {
+    background-color: #00071d;
+}
+
+.logo {
+    display: flex;
+    margin: 1.5em;
+
+}
+
+.logo img {
+    width: 50px;
+}
+
+.titulos {
+    margin: 1em;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.6em;
+    min-width: 280px;
+}
+
+.titulos a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.titulos .nome {
+    font-size: 2.5em;
+}
+
+.titulos .slogan {
+    font-size: 1.17em;
+    text-transform: uppercase;
+    margin: 0.2em 0;
+}
+
+.destaque {
+    color: #16a085;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+}
+
+.container > p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}

@@ -1,0 +1,66 @@
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 3em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.numeros {
+    display: flex;
+    gap: 0.5em;
+}
+
+.numero,
+.seta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #191f63;
+    text-decoration: none;
+    border-radius: 0.2em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.numero {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.seta {
+    height: 2.5em;
+    padding: 0 1.2em;
+}
+
+a.numero:hover,
+a.seta:hover {
+    background-color: #0b7562;
+    color: #fff;
+}
+
+.atual {
+    background-color: #0b7562;
+    color: #fff;
+}
+
+.desabilitado {
+    color: #5f6377;
+    background-color: transparent;
+    cursor: default;
+}
+
+@media (max-width: 600px) {
+    .paginacao {
+        flex-wrap: wrap;
+    }
+
+
+    .numeros {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+    }
+}

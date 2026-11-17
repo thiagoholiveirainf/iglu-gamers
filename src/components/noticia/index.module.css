@@ -1,0 +1,47 @@
+.container {
+    background-color: #fff;
+}
+
+.containerText {
+    padding: 1.3em;
+}
+
+.data {
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
+.container a {
+    text-decoration: none;
+    color: #191f63;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.2;
+}
+
+.container a .titulo {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.divisoria {
+    width: 100%;
+    margin-top: 2em;
+    padding-top: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-top: 1px solid;
+    width: 100%;
+}
+
+a:hover .divisoria {
+    text-decoration: underline;
+
+}
+
+a .divisoria img {
+    float: right;
+    margin-top: 0.3em;
+    width: 1.2em;
+}

@@ -1,0 +1,8 @@
+import "@fontsource/roboto/latin-300.css"
+import "@fontsource/roboto/latin-400.css"
+import "@fontsource/roboto/latin-700.css"
+import "@fontsource/roboto/latin-800.css"
+import "@fontsource/open-sans/latin-300.css"
+import "@fontsource/open-sans/latin-400.css"
+import "@fontsource/open-sans/latin-700.css"
+import "@fontsource/open-sans/latin-800.css"

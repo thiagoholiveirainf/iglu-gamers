@@ -1,0 +1,51 @@
+{
+  "name": "projeto-gatsbyt-firebase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "projeto-gatsbyt-firebase",
+  "author": "THIAGO HENRIQUE ALMEIDA DE OLIVEIRA",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^5.3.0",
+    "@fontsource/roboto": "^5.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "babel-plugin-styled-components": "^2.4.0",
+    "gatsby": "^5.14.6",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-mdx": "^5.16.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.15.0",
+    "gatsby-plugin-sitemap": "^6.15.0",
+    "gatsby-plugin-styled-components": "^6.15.0",
+    "gatsby-remark-images": "^7.15.0",
+    "gatsby-source-filesystem": "^5.15.0",
+    "gatsby-transformer-sharp": "^5.15.0",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.35.5",
+    "styled-components": "^6.6.0"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true,
+    "sharp@0.35.5": true,
+    "lmdb@2.5.2": true,
+    "lmdb@2.5.3": true,
+    "msgpackr-extract@3.0.3": true,
+    "@parcel/watcher@2.5.6": true,
+    "gatsby@5.16.1": true,
+    "gatsby-cli@5.16.0": true,
+    "core-js": false,
+    "core-js-pure": false,
+    "es5-ext": false
+  }
+}

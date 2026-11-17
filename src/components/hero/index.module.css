@@ -1,0 +1,160 @@
+.container {
+    width: 100%;
+    min-height: 700px;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.image {
+    position: absolute;
+    inset: 0;               /* top/right/bottom/left: 0 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* preenche a área cortando as bordas, sem distorcer */
+    object-position: center;
+    z-index: 1;
+}
+
+
+
+.containerText {
+    padding-top: 6em;
+    max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-45%);
+    z-index: 2;
+    margin-top: 3em;
+}
+
+.containerText .botao {
+    background-color: #0b7562; /* verde escuro: contraste 5,6:1 com texto branco */
+    padding: 0.3em 1.4em;
+    min-width: 100px;
+    margin: 0 1em 3em 0;
+    border-radius: .2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.containerText .data {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.containerText h1 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: 800;
+    font-size: 5.5em;
+}
+
+.containerText p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.image {
+    position: absolute;
+}
+
+.destaque {
+    color: #16a085;
+}
+
+.containerText p {
+    font-weight: 300;
+}
+
+.containerText p strong {
+    font-weight: 900;
+}
+
+.containerText .botaoLeiaMais {
+    margin-top: 2em;
+    display: inline-block;
+    background-color: #16a085;
+    padding: 1em 1.4em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    border-radius: 0.2em;
+    transition: background-color 0.3s;
+}
+
+.link:hover .botaoLeiaMais{
+    background-color: #0b4d40;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.containerText .botaoLeiaMais img {
+    width: 1.4em;
+    margin-left: 1em;
+}
+
+@media (max-width: 800px) {
+    .container {
+        min-height: 0;
+    }
+
+
+    .container::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.75));
+    }
+
+
+    .containerText {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 3em 1.5em;
+    }
+
+    .containerText .botao {
+        margin: 0 0.8em 0.8em 0;
+    }
+
+    .containerText .data {
+        display: inline-block;
+    }
+
+    .containerText h1 {
+        font-size: clamp(2.2em, 9vw, 3.5em);
+        line-height: 1.1;
+        overflow-wrap: break-word;
+    }
+
+    .containerText p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerText {
+        padding: 2.5em 1.2em;
+    }
+
+    .containerText p {
+        font-size: 1em;
+    }
+}
